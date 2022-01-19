@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong", "PingPong\PingPo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{8044ED81-24A0-46AE-BB82-269F50742833}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{62A08B1E-237B-4251-8DFD-A5D3116D8AB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8044ED81-24A0-46AE-BB82-269F50742833}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8044ED81-24A0-46AE-BB82-269F50742833}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8044ED81-24A0-46AE-BB82-269F50742833}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62A08B1E-237B-4251-8DFD-A5D3116D8AB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62A08B1E-237B-4251-8DFD-A5D3116D8AB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62A08B1E-237B-4251-8DFD-A5D3116D8AB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62A08B1E-237B-4251-8DFD-A5D3116D8AB1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
