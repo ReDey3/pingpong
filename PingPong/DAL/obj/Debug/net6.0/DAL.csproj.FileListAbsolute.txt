@@ -1,0 +1,12 @@
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\bin\Debug\net6.0\DAL.deps.json
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\bin\Debug\net6.0\DAL.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\bin\Debug\net6.0\ref\DAL.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\bin\Debug\net6.0\DAL.pdb
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\obj\Debug\net6.0\DAL.csproj.AssemblyReference.cache
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\obj\Debug\net6.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\obj\Debug\net6.0\DAL.AssemblyInfoInputs.cache
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\obj\Debug\net6.0\DAL.AssemblyInfo.cs
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\obj\Debug\net6.0\DAL.csproj.CoreCompileInputs.cache
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\obj\Debug\net6.0\DAL.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\obj\Debug\net6.0\ref\DAL.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\DAL\obj\Debug\net6.0\DAL.pdb

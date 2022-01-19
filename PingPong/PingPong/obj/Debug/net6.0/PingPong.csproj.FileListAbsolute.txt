@@ -13,3 +13,10 @@ C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\Ping
 C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\obj\Debug\net6.0\ref\PingPong.dll
 C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\obj\Debug\net6.0\PingPong.pdb
 C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\obj\Debug\net6.0\PingPong.genruntimeconfig.cache
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\bin\Debug\net6.0\BLL.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\bin\Debug\net6.0\Common.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\bin\Debug\net6.0\DAL.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\bin\Debug\net6.0\BLL.pdb
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\bin\Debug\net6.0\Common.pdb
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\bin\Debug\net6.0\DAL.pdb
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\PingPong\obj\Debug\net6.0\PingPong.csproj.CopyComplete
