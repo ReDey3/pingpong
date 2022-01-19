@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using BLL.Actions.Abstractions;
+using System.Net.Sockets;
+
 
 namespace BLL
 {
@@ -15,9 +17,9 @@ namespace BLL
             _actionsToRun = actionsToRun;
         }
 
-        public void RunAction(IDictionary<string,string> actionToRun)
+        public void RunAction(Socket handler,IDictionary<string,string> actionToRun)
         {
-            _actionsToRun[actionToRun.Keys.First()].RunAction();
+            _actionsToRun[actionToRun.Keys.First()].RunAction(handler, actionToRun.Values.First());
         }
     }
 }

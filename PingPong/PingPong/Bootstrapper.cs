@@ -18,18 +18,20 @@ namespace PingPong
 
         public UserCatcher UserCatcher;
         public UserInputCatcher<string> UserInputCatcher;
-        public IBytesConverter<string> _converter;
-        public IRequestFormatter<string> _requestFormatter;
-        public ActionRunner<string> _actionRunner;
+        public IBytesConverter<string> ToStringConverter;
+        public IStringConverter<byte[]> ToBytesConverter;
+        public IRequestFormatter<string> RequestFormatter;
+        public ActionRunner<string> ActionRunner;
 
 
         public Bootstrapper()
         {
-            _converter = new BytesToStringConverter();
-            _requestFormatter = new BasicFormatter();
-            _actionRunner = new ActionRunner<string>(new Dictionary<string, IAction> { { "SendBackToUser", new SendBackToUser() } });
+            ToStringConverter = new BytesToStringConverter();
+            ToBytesConverter = new StringToBytes();
+            RequestFormatter = new BasicFormatter();
+            ActionRunner = new ActionRunner<string>(new Dictionary<string, IAction> { { "SendBackToUser", new SendBackToUser(ToBytesConverter) } });
 
-            UserInputCatcher = new UserInputCatcher<string>(_converter, _requestFormatter, _actionRunner);
+            UserInputCatcher = new UserInputCatcher<string>(ToStringConverter, RequestFormatter, ActionRunner);
             UserCatcher = new UserCatcher(new UserHandler(UserInputCatcher));
         }
 
