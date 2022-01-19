@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Net.Sockets;
+using Common.Converters;
+
+namespace BLL.Actions
+{
+    public class SendBackToUser : Abstractions.IAction<string>
+    {
+        public void RunAction(Socket handler, string input)
+        {
+            handler.Send(Encoding.ASCII.GetBytes(input));
+        }
+    }
+}

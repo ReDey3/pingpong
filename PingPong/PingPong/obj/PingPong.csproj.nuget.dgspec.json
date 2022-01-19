@@ -30,7 +30,14 @@
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\VADIM\\OneDrive\\שולחן העבודה\\MamasWork\\pingpong\\PingPong\\Common\\Common.csproj": {
+                "projectPath": "C:\\Users\\VADIM\\OneDrive\\שולחן העבודה\\MamasWork\\pingpong\\PingPong\\Common\\Common.csproj"
+              },
+              "C:\\Users\\VADIM\\OneDrive\\שולחן העבודה\\MamasWork\\pingpong\\PingPong\\DAL\\DAL.csproj": {
+                "projectPath": "C:\\Users\\VADIM\\OneDrive\\שולחן העבודה\\MamasWork\\pingpong\\PingPong\\DAL\\DAL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

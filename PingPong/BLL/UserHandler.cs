@@ -10,6 +10,13 @@ namespace BLL
 {
     public class UserHandler
     {
+        private UserInputCatcher<string> _inputCatcher;
+
+        public UserHandler(UserInputCatcher<string> inputCatcher)
+        {
+            _inputCatcher = inputCatcher;
+        }
+
         public async void HandleUser(Socket handler) 
         {
             string data = null;
@@ -20,14 +27,12 @@ namespace BLL
                 {
                     while (true)
                     {
-                        bytes = new byte[1024];
-                        int bytesRec = handler.Receive(bytes);
-                        data += Encoding.ASCII.GetString(bytes, 0, bytesRec);
-
-                        Console.WriteLine("Text received : {0}", data);
+                        _inputCatcher.GetUserInput(handler);
+                        
+                        /*Console.WriteLine("Text received : {0}", data);
                         byte[] msg = Encoding.ASCII.GetBytes(data);
                         handler.Send(msg);
-                        data = "";
+                        data = "";*/
                     }
                 });
             }

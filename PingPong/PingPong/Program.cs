@@ -14,7 +14,7 @@ namespace PingPong
             IPHostEntry host = Dns.GetHostEntry("localhost");
             IPAddress ipAddress = host.AddressList[0];
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 1337);
-            UserCatcher userChatcher = new UserCatcher(new UserHandler());
+            
             
             
             Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
