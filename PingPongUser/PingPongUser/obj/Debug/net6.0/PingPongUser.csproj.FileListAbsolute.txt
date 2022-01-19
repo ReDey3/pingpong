@@ -1,0 +1,14 @@
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\bin\Debug\net6.0\PingPongUser.exe
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\bin\Debug\net6.0\PingPongUser.deps.json
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\bin\Debug\net6.0\PingPongUser.runtimeconfig.json
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\bin\Debug\net6.0\PingPongUser.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\bin\Debug\net6.0\ref\PingPongUser.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\bin\Debug\net6.0\PingPongUser.pdb
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\obj\Debug\net6.0\PingPongUser.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\obj\Debug\net6.0\PingPongUser.AssemblyInfoInputs.cache
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\obj\Debug\net6.0\PingPongUser.AssemblyInfo.cs
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\obj\Debug\net6.0\PingPongUser.csproj.CoreCompileInputs.cache
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\obj\Debug\net6.0\PingPongUser.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\obj\Debug\net6.0\ref\PingPongUser.dll
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\obj\Debug\net6.0\PingPongUser.pdb
+C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPongUser\PingPongUser\obj\Debug\net6.0\PingPongUser.genruntimeconfig.cache
