@@ -28,12 +28,17 @@ namespace BLL
         {
             string data = null;
             byte[] bytes = new byte[1024];
+            try
+            {
+                int bytesRec = handler.Receive(bytes);
+                T convertedUserInput = _converter.Convert(bytes, bytesRec);
 
-            int bytesRec = handler.Receive(bytes);
-            T convertedUserInput = _converter.Convert(bytes, bytesRec);
-
-            IDictionary<string, string> parsedInput = _requestFormatter.FormatRequest(convertedUserInput);
-            _actionRunner.RunAction(handler, parsedInput);
+                IDictionary<string, string> parsedInput = _requestFormatter.FormatRequest(convertedUserInput);
+                _actionRunner.RunAction(handler, parsedInput);
+            }
+            catch (Exception e)
+            {
+            } 
         }
     }
 }
