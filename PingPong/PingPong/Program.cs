@@ -11,6 +11,7 @@ namespace PingPong
     {
         static void Main(string[] args)
         {
+            var bootstrapper = new Bootstrapper();
             IPHostEntry host = Dns.GetHostEntry("localhost");
             IPAddress ipAddress = host.AddressList[0];
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 1337);
@@ -20,7 +21,7 @@ namespace PingPong
             Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             listener.Bind(localEndPoint);
             listener.Listen(100);
-            userChatcher.WaitForNewUsers(listener);
+            bootstrapper.UserCatcher.WaitForNewUsers(listener);
         }
     }
 }

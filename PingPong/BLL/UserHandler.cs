@@ -19,8 +19,10 @@ namespace BLL
 
         public async void HandleUser(Socket handler) 
         {
+            Console.WriteLine("New user logged.");
             string data = null;
             byte[] bytes = null;
+
             try
             {
                 await Task.Run(() =>
@@ -28,11 +30,6 @@ namespace BLL
                     while (true)
                     {
                         _inputCatcher.GetUserInput(handler);
-                        
-                        /*Console.WriteLine("Text received : {0}", data);
-                        byte[] msg = Encoding.ASCII.GetBytes(data);
-                        handler.Send(msg);
-                        data = "";*/
                     }
                 });
             }

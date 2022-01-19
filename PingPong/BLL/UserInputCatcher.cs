@@ -31,6 +31,7 @@ namespace BLL
 
             int bytesRec = handler.Receive(bytes);
             T convertedUserInput = _converter.Convert(bytes, bytesRec);
+
             IDictionary<string, string> parsedInput = _requestFormatter.FormatRequest(convertedUserInput);
             _actionRunner.RunAction(handler, parsedInput);
         }

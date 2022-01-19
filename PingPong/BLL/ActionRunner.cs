@@ -19,7 +19,10 @@ namespace BLL
 
         public void RunAction(Socket handler,IDictionary<string,string> actionToRun)
         {
-            _actionsToRun[actionToRun.Keys.First()].RunAction(handler, actionToRun.Values.First());
+            if (_actionsToRun.Keys.Contains(actionToRun.Keys.First())) 
+            {
+                _actionsToRun[actionToRun.Keys.First()].RunAction(handler, actionToRun.Values.First());
+            }
         }
     }
 }
