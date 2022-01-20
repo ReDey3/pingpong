@@ -11,7 +11,5 @@ C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\BLL\
 C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\BLL\obj\Debug\net6.0\ref\BLL.dll
 C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\BLL\obj\Debug\net6.0\BLL.pdb
 C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\BLL\bin\Debug\net6.0\Common.dll
-C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\BLL\bin\Debug\net6.0\DAL.dll
 C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\BLL\bin\Debug\net6.0\Common.pdb
-C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\BLL\bin\Debug\net6.0\DAL.pdb
 C:\Users\VADIM\OneDrive\שולחן העבודה\MamasWork\pingpong\PingPong\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete

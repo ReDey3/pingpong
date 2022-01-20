@@ -6,8 +6,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Common": "1.0.0",
-          "DAL": "1.0.0"
+          "Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BLL.dll": {}
@@ -25,16 +24,6 @@
         "runtime": {
           "bin/placeholder/Common.dll": {}
         }
-      },
-      "DAL/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/DAL.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DAL.dll": {}
-        }
       }
     }
   },
@@ -48,18 +37,12 @@
       "type": "project",
       "path": "../Common/Common.csproj",
       "msbuildProject": "../Common/Common.csproj"
-    },
-    "DAL/1.0.0": {
-      "type": "project",
-      "path": "../DAL/DAL.csproj",
-      "msbuildProject": "../DAL/DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BLL >= 1.0.0",
-      "Common >= 1.0.0",
-      "DAL >= 1.0.0"
+      "Common >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -98,9 +81,6 @@
             },
             "C:\\Users\\VADIM\\OneDrive\\שולחן העבודה\\MamasWork\\pingpong\\PingPong\\Common\\Common.csproj": {
               "projectPath": "C:\\Users\\VADIM\\OneDrive\\שולחן העבודה\\MamasWork\\pingpong\\PingPong\\Common\\Common.csproj"
-            },
-            "C:\\Users\\VADIM\\OneDrive\\שולחן העבודה\\MamasWork\\pingpong\\PingPong\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\VADIM\\OneDrive\\שולחן העבודה\\MamasWork\\pingpong\\PingPong\\DAL\\DAL.csproj"
             }
           }
         }

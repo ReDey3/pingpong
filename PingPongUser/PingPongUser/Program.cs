@@ -3,6 +3,7 @@ using System.Text;
 using System.Net;
 using System.Net.Sockets;
 using PingPongUser;
+using Common;
 
 namespace PingPong
 {
@@ -22,10 +23,11 @@ namespace PingPong
             int.TryParse(serverData["port"], out port);
 
             IPEndPoint remoteEP = new IPEndPoint(ipAddress, port);
+            
 
             // Create a TCP/IP  socket.
             Socket sender = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-            
+            Person person = bootsrapper.PersonFactory.Create();
                 
             sender.Connect(remoteEP);
             
@@ -39,8 +41,8 @@ namespace PingPong
                 bootsrapper.Output.Output("Enter input");
                 userInput = bootsrapper.StringInput.GetInput();
                 
-                msg = Encoding.ASCII.GetBytes(userInput);
-                bytesSent = sender.Send(msg);
+                
+                bytesSent = sender.Send(bootsrapper.Converter.Convert(person));
                 bytesRec = sender.Receive(bytes);
 
                 bootsrapper.Output.Output($"Server Response = {Encoding.ASCII.GetString(bytes, 0, bytesRec)}");

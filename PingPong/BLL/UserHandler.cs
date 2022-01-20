@@ -11,10 +11,10 @@ namespace BLL
 {
     public class UserHandler
     {
-        private UserInputCatcher<string> _inputCatcher;
+        private UserInputCatcher<object> _inputCatcher;
         private IOutput<string> _output;
 
-        public UserHandler(UserInputCatcher<string> inputCatcher, IOutput<string> output)
+        public UserHandler(UserInputCatcher<object> inputCatcher, IOutput<string> output)
         {
             _inputCatcher = inputCatcher;
             _output = output;

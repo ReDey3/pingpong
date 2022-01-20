@@ -9,8 +9,7 @@
       "PingPong/1.0.0": {
         "dependencies": {
           "BLL": "1.0.0",
-          "Common": "1.0.0",
-          "DAL": "1.0.0"
+          "Common": "1.0.0"
         },
         "runtime": {
           "PingPong.dll": {}
@@ -18,8 +17,7 @@
       },
       "BLL/1.0.0": {
         "dependencies": {
-          "Common": "1.0.0",
-          "DAL": "1.0.0"
+          "Common": "1.0.0"
         },
         "runtime": {
           "BLL.dll": {}
@@ -28,11 +26,6 @@
       "Common/1.0.0": {
         "runtime": {
           "Common.dll": {}
-        }
-      },
-      "DAL/1.0.0": {
-        "runtime": {
-          "DAL.dll": {}
         }
       }
     }
@@ -49,11 +42,6 @@
       "sha512": ""
     },
     "Common/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

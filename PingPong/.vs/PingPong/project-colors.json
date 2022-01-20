@@ -5,7 +5,22 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "3f1c3925-3d6d-4e09-8581-8856fd69c6b1": {
+      "ProjectGuid": "3f1c3925-3d6d-4e09-8581-8856fd69c6b1",
+      "DisplayName": "PingPong",
+      "ColorIndex": 0
+    },
+    "c652efcb-0a4b-41ce-b0f5-f0441ebba8e4": {
+      "ProjectGuid": "c652efcb-0a4b-41ce-b0f5-f0441ebba8e4",
+      "DisplayName": "BLL",
+      "ColorIndex": 1
+    },
+    "8044ed81-24a0-46ae-bb82-269f50742833": {
+      "ProjectGuid": "8044ed81-24a0-46ae-bb82-269f50742833",
+      "DisplayName": "Common",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 0
+  "NextColorIndex": 3
 }

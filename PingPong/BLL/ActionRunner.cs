@@ -17,11 +17,11 @@ namespace BLL
             _actionsToRun = actionsToRun;
         }
 
-        public void RunAction(Socket handler,IDictionary<string,string> actionToRun)
+        public void RunAction(Socket handler,IDictionary<string,T> actionToRun)
         {
             if (_actionsToRun.Keys.Contains(actionToRun.Keys.First())) 
             {
-                _actionsToRun[actionToRun.Keys.First()].RunAction(handler, actionToRun.Values.First());
+                _actionsToRun[actionToRun.Keys.First()].RunAction(handler, actionToRun.Values.First().ToString());
             }
         }
     }

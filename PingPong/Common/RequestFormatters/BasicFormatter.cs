@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Common.RequestFormatters
 {
-    public class BasicFormatter : Abstractions.IRequestFormatter<string>
+    public class BasicFormatter : Abstractions.IRequestFormatter<object>
     {
-        public IDictionary<string,string> FormatRequest(string input)
+        public IDictionary<string, object> FormatRequest(object input)
         {
-            return new Dictionary<string, string> { { "SendBackToUser", input } };
+            return new Dictionary<string, object> { { "SendBackToUser", input.ToString() } };
         }
     }
 }
