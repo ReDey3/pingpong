@@ -20,7 +20,7 @@ namespace PingPong
             {
                 port = 1337;
             }
-
+            Console.WriteLine(port);
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, port);
             
             Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);

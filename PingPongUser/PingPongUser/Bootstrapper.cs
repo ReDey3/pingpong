@@ -12,15 +12,19 @@ namespace PingPongUser
     public class Bootstrapper
     {
         public ServerDataGetter ServerData;
-        public IInput<string> Input;
+        public IInput<string> IpInput;
+        public IInput<string> NumberInput;
+        public IInput<string> StringInput;
         public IOutput<string> Output;
 
 
         public Bootstrapper()
         {
             Output = new ConsoleOutput();
-            Input = new StringInput();
-            ServerData = new ServerDataGetter(Input, Output);
+            IpInput = new IpConsoleInput();
+            NumberInput = new NumberConsoleInput();
+            StringInput = new StringInput();
+            ServerData = new ServerDataGetter(IpInput, NumberInput, Output);
         }
 
 

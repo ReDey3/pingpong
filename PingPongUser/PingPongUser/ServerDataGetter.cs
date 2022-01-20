@@ -11,21 +11,23 @@ namespace PingPongUser
 {
     public class ServerDataGetter
     {
-        private IInput<string> _input;
+        private IInput<string> _ipInput;
+        private IInput<string> _numberInput;
         private IOutput<string> _output;
 
-        public ServerDataGetter(IInput<string> input, IOutput<string> output)
+        public ServerDataGetter(IInput<string> ipInput, IInput<string> numberInput, IOutput<string> output)
         {
-            _input = input;
+            _numberInput = numberInput;
+            _ipInput = ipInput;
             _output = output;
         }
 
         public IDictionary<string, string> AskForServerData()
         {
             _output.Output("Enter ip");
-            var ip = _input.GetInput();
+            var ip = _ipInput.GetInput();
             _output.Output("Enter port");
-            var port = _input.GetInput();
+            var port = _numberInput.GetInput();
             return new Dictionary<string, string> { {"ip", ip}, {"port", port } };
         }
     }
