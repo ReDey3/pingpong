@@ -25,7 +25,7 @@ namespace PingPong
 
             // Create a TCP/IP  socket.
             Socket sender = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
-
+            
                 
             sender.Connect(remoteEP);
             

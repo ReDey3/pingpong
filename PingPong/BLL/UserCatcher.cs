@@ -2,6 +2,7 @@
 using System.Net;
 using System.Net.Sockets;
 using Common.IO.Abstractions;
+using Common;
 
 namespace BLL
 {
@@ -16,7 +17,7 @@ namespace BLL
             _output = output;
         }
 
-        public async void WaitForNewUsers(Socket listener)
+        public async void WaitForNewUsers(INetWorkWrapper listener)
         {
             _output.Output("Waiting for users");
             

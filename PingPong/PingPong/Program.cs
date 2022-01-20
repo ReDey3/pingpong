@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Text;
+using BLL.NetWorkers;
 using BLL;
 using System.Net;
 using System.Net.Sockets;
 using System.Configuration;
+using Common;
 
 namespace PingPong
 {
@@ -22,8 +24,9 @@ namespace PingPong
             }
             Console.WriteLine(port);
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, port);
-            
-            Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+
+            INetWorkWrapper listener = new SocketWorker(ipAddress);
+            //Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             listener.Bind(localEndPoint);
             listener.Listen(100);
             bootstrapper.UserCatcher.WaitForNewUsers(listener);

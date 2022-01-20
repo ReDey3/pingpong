@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Sockets;
 using Common.IO.Abstractions;
+using Common;
 
 namespace BLL
 {
@@ -16,7 +17,7 @@ namespace BLL
         public UserHandler(UserInputCatcher<string> inputCatcher, IOutput<string> output)
         {
             _inputCatcher = inputCatcher;
-            _output = output; 
+            _output = output;
         }
 
         public async void HandleUser(Socket handler) 
