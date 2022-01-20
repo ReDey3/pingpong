@@ -4,6 +4,7 @@ using System.Net;
 using System.Net.Sockets;
 using PingPongUser;
 using Common;
+using Common.RequestDTO;
 
 namespace PingPong
 {
@@ -18,7 +19,8 @@ namespace PingPong
             Console.WriteLine(serverData["port"]);
             IPHostEntry host = Dns.GetHostEntry(serverData["ip"]);
             IPAddress ipAddress = host.AddressList[0];
-            
+            PersonRequestDTO personRequestDTO;
+
             int port;
             int.TryParse(serverData["port"], out port);
 
@@ -28,7 +30,7 @@ namespace PingPong
             // Create a TCP/IP  socket.
             Socket sender = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             Person person = bootsrapper.PersonFactory.Create();
-                
+            
             sender.Connect(remoteEP);
             
             int? bytesSent = null;
@@ -40,9 +42,9 @@ namespace PingPong
             {
                 bootsrapper.Output.Output("Enter input");
                 userInput = bootsrapper.StringInput.GetInput();
-                
-                
-                bytesSent = sender.Send(bootsrapper.Converter.Convert(person));
+
+                personRequestDTO = new PersonRequestDTO(person, userInput);
+                bytesSent = sender.Send(bootsrapper.Converter.Convert(personRequestDTO));
                 bytesRec = sender.Receive(bytes);
 
                 bootsrapper.Output.Output($"Server Response = {Encoding.ASCII.GetString(bytes, 0, bytesRec)}");
