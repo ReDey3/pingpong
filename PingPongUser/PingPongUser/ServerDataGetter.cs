@@ -1,11 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Common.IO.Input;
-using Common.IO.Output;
-using Common.IO.Abstractions;
+﻿using Common.IO.Abstractions;
 
 namespace PingPongUser
 {

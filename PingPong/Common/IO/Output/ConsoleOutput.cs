@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Common.IO.Output
+﻿namespace Common.IO.Output
 {
     public class ConsoleOutput : Abstractions.IOutput<string>
     {

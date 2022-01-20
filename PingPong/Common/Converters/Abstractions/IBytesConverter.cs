@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Common.Converters.Abstractions
+﻿namespace Common.Converters.Abstractions
 {
     public interface IBytesConverter<T>
     {

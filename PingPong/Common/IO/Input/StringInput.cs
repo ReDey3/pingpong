@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Common.IO.Input
+﻿namespace Common.IO.Input
 {
     public class StringInput : Abstractions.IInput<string>
     {
