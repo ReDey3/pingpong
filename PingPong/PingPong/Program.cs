@@ -3,7 +3,7 @@ using System.Text;
 using BLL;
 using System.Net;
 using System.Net.Sockets;
-
+using System.Configuration;
 
 namespace PingPong
 {
