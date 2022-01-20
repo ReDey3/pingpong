@@ -27,7 +27,7 @@ namespace PingPong
             
 
             // Create a TCP/IP  socket.
-            Socket sender = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            TcpClient sender = new TcpClient(ipAddress.AddressFamily);
             Person person = bootsrapper.PersonFactory.Create();
             
             sender.Connect(remoteEP);
@@ -43,8 +43,9 @@ namespace PingPong
                 userInput = bootsrapper.StringInput.GetInput();
 
                 personRequestDTO = new PersonRequestDTO(person, userInput);
-                bytesSent = sender.Send(bootsrapper.Converter.Convert(personRequestDTO));
-                bytesRec = sender.Receive(bytes);
+                
+                bytesSent = sender.Client.Send(bootsrapper.Converter.Convert(personRequestDTO));
+                bytesRec = sender.Client.Receive(bytes);
 
                 bootsrapper.Output.Output($"Server Response = {Encoding.ASCII.GetString(bytes, 0, bytesRec)}");
             }
