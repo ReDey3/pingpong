@@ -12,11 +12,16 @@ namespace PingPong
         static void Main(string[] args)
         {
             var bootstrapper = new Bootstrapper();
-            IPHostEntry host = Dns.GetHostEntry("localhost");
+            IPHostEntry host = Dns.GetHostEntry("127.0.0.1");
             IPAddress ipAddress = host.AddressList[0];
-            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, 1337);
+            int port;
             
-            
+            if (!int.TryParse(args[0], out port))
+            {
+                port = 1337;
+            }
+
+            IPEndPoint localEndPoint = new IPEndPoint(ipAddress, port);
             
             Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             listener.Bind(localEndPoint);

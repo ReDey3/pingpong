@@ -11,7 +11,7 @@ namespace Common.RequestFormatters
     {
         public IDictionary<string,string> FormatRequest(string input)
         {
-            return new Dictionary<string, string> { { "SendBackToUser", input } }; // TODO: should use config here
+            return new Dictionary<string, string> { { "SendBackToUser", input } };
         }
     }
 }
