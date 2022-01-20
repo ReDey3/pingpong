@@ -20,7 +20,12 @@
       "ProjectGuid": "8044ed81-24a0-46ae-bb82-269f50742833",
       "DisplayName": "Common",
       "ColorIndex": 2
+    },
+    "62a08b1e-237b-4251-8dfd-a5d3116d8ab1": {
+      "ProjectGuid": "62a08b1e-237b-4251-8dfd-a5d3116d8ab1",
+      "DisplayName": "DAL",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 4
 }

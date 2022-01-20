@@ -9,6 +9,7 @@ namespace PingPong
         static void Main(string[] args)
         {
             var bootstrapper = new Bootstrapper();
+            
             IPHostEntry host = Dns.GetHostEntry("127.0.0.1");
             IPAddress ipAddress = host.AddressList[0];
             int port;
