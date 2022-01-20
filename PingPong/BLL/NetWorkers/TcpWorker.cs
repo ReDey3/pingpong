@@ -9,38 +9,39 @@ using System.Net.Sockets;
 
 namespace BLL.NetWorkers
 {
-    public class SocketWorker : INetWorkWrapper
+    public class TcpWorker : INetWorkWrapper
     {
-        private Socket _socket;
+        private TcpListener _tcpWorker;
 
-        public SocketWorker(IPAddress ipAddress)
+
+        public TcpWorker(IPAddress ipAddress, int port)
         {
-            _socket = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            _tcpWorker = new TcpListener(ipAddress, port);
         }
 
         public Socket Accept()
         {
-            return _socket.Accept();
+            return _tcpWorker.AcceptSocket();
         }
 
         public void Bind(IPEndPoint localEndpoint)
         {
-            _socket.Bind(localEndpoint);
+            _tcpWorker = new TcpListener(localEndpoint);
         }
 
         public void Listen(int backlog)
         {
-            _socket.Listen(100);
+            _tcpWorker.Start(backlog);
         }
 
         public int Receive(byte[] dataToReceive)
         {
-            return _socket.Receive(dataToReceive);
+            throw new NotImplementedException();
         }
 
         public void Send(byte[] dataToSend)
         {
-            _socket.Send(dataToSend);
+            throw new NotImplementedException();
         }
     }
 }

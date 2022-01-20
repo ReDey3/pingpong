@@ -14,7 +14,7 @@ namespace Common
         public Socket Accept();
         public void Send(byte[] dataToSend);
         public int Receive(byte[] dataToReceive);
-        public void Bind(EndPoint localEndpoint);
+        public void Bind(IPEndPoint localEndpoint);
         public void Listen(int backlog);
     }
 }

@@ -22,11 +22,11 @@ namespace PingPong
             {
                 port = 1337;
             }
-            Console.WriteLine(port);
+
             IPEndPoint localEndPoint = new IPEndPoint(ipAddress, port);
 
-            INetWorkWrapper listener = new SocketWorker(ipAddress);
-            //Socket listener = new Socket(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
+            INetWorkWrapper listener = new TcpWorker(ipAddress, port);
+
             listener.Bind(localEndPoint);
             listener.Listen(100);
             bootstrapper.UserCatcher.WaitForNewUsers(listener);
